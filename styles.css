@@ -1,0 +1,149 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: "ivypresto-display", serif;
+  font-weight: 200;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  background-color: #F1E5D1;
+  color: #3A3335;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #3A3335;
+}
+
+.heading {
+  position: absolute;
+  font-size: 10vmin;
+  text-align: center;
+  top: 7.5%;
+  transition: all 0.8s ease-out;
+  z-index: 2;
+}
+
+.heading:hover {
+  text-shadow: 5px 5px 5px #C39898;
+}
+
+.todo {
+	height: 75%;
+	width: 75%;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	align-items: center;
+	justify-items: center;
+	z-index: 1;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  z-index: 1
+}
+
+@media (max-width: 800px) {
+  .sources-container {
+    flex-direction: column;
+  }
+}
+
+.menu-item {
+  font-size: 5vmin;
+  transition: all 0.8s ease-out;
+  text-align: center;
+}
+
+.explanation-container {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	z-index: 1
+}
+
+.explanation-item {
+	text-align: center;
+	position: absolute; 
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0; 
+	transition: opacity 1s ease-out; 
+	font-size: 2.5vmin;
+}
+
+.explanation-item:hover {
+	font-style: italic;
+}
+
+#message-1 {
+	font-size: 2.5vmin;
+	margin-top: 3vmin;
+}
+
+.shape-container {
+	position: absolute;
+	height: 100vh; 
+	width: 100vw;
+}
+
+.shape-item {
+	position: absolute;
+	border-radius: 50%;
+	z-index: 0;
+	transition: transform 1s cubic-bezier(0,1.01,.24,.9);
+	height: 150vmin;
+	width: 150vmin;
+	transform: scale(0);
+	box-shadow: 5px 5px 5px 5px #e0d0b6;
+}
+
+#shape-item-1 {
+	background-color: #80A0A4;
+	top: 30%;
+	left: 30%;
+}
+
+#shape-item-2 {
+	background-color: #778472;
+	bottom: 10%;
+	left: 40%;
+}
+
+#shape-item-3 {
+	background-color: #D7AC9F;
+	top: 15%;
+	left: 40%;
+}
+
+.big-circle-container {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.big-circle-item {
+	position: absolute;
+	height: 200vmin;
+	width: 200vmin;
+	transform: scale(0);
+	border-radius: 50%;
+	z-index: 0;
+	background-color: #D7AC9F;
+	transition: transform 1.5s cubic-bezier(0,1.01,.24,.9);
+}
+
+.bigger {
+	transform: scale(1.5);
+}
+
+
